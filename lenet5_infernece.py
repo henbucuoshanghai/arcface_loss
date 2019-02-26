@@ -69,7 +69,6 @@ def inference(input_tensor, train, regularizer,train_label):
         	normed_features = tf.nn.l2_normalize(x, 1, 1e-10, name='features_norm')
 
         	cosine = tf.matmul(normed_features, normed_weights)
-		cosine = tf.clip_by_value(cosine, -1, 1, name='cosine_clip')
         	one_hot_mask = tf.one_hot(train_label,10, on_value=1., off_value=0., axis=-1, dtype=tf.float32)
 
         	cosine_theta_2 = tf.pow(cosine, 2., name='cosine_theta_2')
