@@ -3,7 +3,7 @@ ARC-faceloss
 I changed the loss of the original lenet5 handwirtten Network:softmax loss.I use the Arc-loss replace of it.
 
 I havenot finished my training,I only trained 220 steps as fllows,but tha acc on test data is very high 98.93%,which is higher than the 
-original softmax loss 98.57% and the cos-loss  
+original softmax loss 98.57% and the cos-loss 98.95%.It is very fast.
 
 
 After 10 training step(s), loss on test data is 1.98712,acc is 0.772333
